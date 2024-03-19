@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Carousel.scss'; // Importer le fichier SCSS pour le style
+import '../styles/Carousel.scss';
 
 interface CarouselProps {
   image: string;

@@ -1,0 +1,44 @@
+.carousel {
+  position: relative;
+  width: calc(100% - 150px);
+  height: 12em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 40px auto;
+
+  @media only screen and (max-width: 600px) {
+    width: calc(100% - 20px); // Largeur ajustée avec une marge de 10px à gauche et à droite pour la version mobile
+    height: 7em; // Hauteur pour la version mobile
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    @media only screen and (max-width: 600px) {
+      font-size: 26px;
+      padding: 15px;
+      text-align: inherit;
+    }
+  }
+}

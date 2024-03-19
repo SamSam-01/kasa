@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Card.scss';
+import { Link } from 'react-router-dom';
 
 interface CardProps {
   id: string;
@@ -9,12 +10,14 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ id, title, cover }) => {
   return (
-    <div className="card">
-      <img src={cover} alt={title} className="card__cover" />
-      <div className="card__content">
-        <p className="card__title">{title}</p>
-      </div>
-    </div>
+    <Link to={`/location/${id}`}>
+        <div className="card">
+            <img src={cover} alt={title} className="card__cover" />
+            <div className="card__content">
+                <p className="card__title">{title}</p>
+            </div>
+        </div>
+    </Link>
   );
 };
 

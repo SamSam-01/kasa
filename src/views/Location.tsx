@@ -30,7 +30,7 @@ const Location: React.FC = () => {
           <HostInfo
           hostName={logement.host.name}
           hostPicture={logement.host.picture}
-          rating={logement.rating}
+          rating={Number(logement.rating)}
           />
         </div>
       </div>

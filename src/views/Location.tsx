@@ -2,22 +2,39 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import logementsData from '../ressources/logements.json';
 import Carousel from '../components/Carousel';
+import "../styles/Location.scss"
+import LogementInfo from '../components/LogementInfo';
+import HostInfo from '../components/HostInfo';
 
 const Location: React.FC = () => {
-  const { id } = useParams<{ id: string }>(); // Récupérer l'ID du logement depuis les paramètres d'URL
-  const logement = logementsData.find((logement) => logement.id === id); // Rechercher le logement correspondant dans les données
+  const { id } = useParams<{ id: string }>();
+  const logement = logementsData.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>; // Gérer le cas où le logement n'est pas trouvé
+    return <div>Logement non trouvé</div>;
   }
-  const images = logement.pictures; // Supposons que logementData est un tableau d'objets, et vous récupérez le premier logement ici
+  const images = logement.pictures;
 
   return (
-    <div>
-      {/* Afficher le carousel uniquement s'il y a plus d'une image */}
-      {images.length > 1 && <Carousel images={images} />}
-      <h2>{logement.title}</h2>
-      {/* Afficher les autres données du logement ici */}
+    <div className='location'>
+      <Carousel images={images} />
+      <div className='infos'>
+        <div className='left-section'>
+          <LogementInfo
+            title={logement.title} 
+            location={logement.location}
+            tags={logement.tags}
+          />
+        </div>
+        <div className='right-section'>
+          <HostInfo
+          hostName={logement.host.name}
+          hostPicture={logement.host.picture}
+          rating={logement.rating}
+          />
+        </div>
+      </div>
+
     </div>
   );
 };

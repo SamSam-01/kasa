@@ -2,9 +2,14 @@
 
 .host-info {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: left;
+}
+
+.host-details {
+  display: flex;
+  align-items: center;
 }
 
 .host-name {
@@ -13,7 +18,6 @@
   color: $primary-color;
   font-size: 16px;
   font-weight: light;
-  text-align: right;
 }
 
 .host-picture {
@@ -21,4 +25,8 @@
   height: 40px;
   border-radius: 50%;
   margin-left: 10px;
+}
+
+.rating-container {
+  margin-top: 10px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Tags from './Tags';
-import '../styles/LogementInfo.scss';
+import '../styles/LogementInfo.sass';
 
 interface LogementInfoProps {
   title: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Banner.scss';
+import '../styles/Banner.sass';
 
 interface BannerProps {
   image: string;

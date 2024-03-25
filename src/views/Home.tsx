@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
-import '../styles/Home.scss';
+import '../styles/Home.sass';
 import logementsData from '../ressources/logements.json';
 
 const Home: React.FC = () => {

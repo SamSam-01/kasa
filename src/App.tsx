@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Location from './views/Location';
 import "./App.scss";
+import NotFound from './views/NotFound';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/location/:id"  element={<Location />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

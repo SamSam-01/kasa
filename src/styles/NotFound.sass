@@ -1,0 +1,28 @@
+@import 'variables'
+
+.not-found-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100vh
+  font-family: $font-family-sans-serif
+
+.error-code
+  font-size: 6em
+  color: $primary-color
+  margin-bottom: 20px
+
+.error-message
+  font-size: 2em
+  text-align: center
+  margin-bottom: 20px
+
+.return-home
+  text-decoration: underline
+  color: black
+  cursor: pointer
+  transition: color 0.3s ease
+
+  &:hover
+    color: darken(black, 10%)

@@ -1,0 +1,27 @@
+@import 'variables'
+.collapse
+  background-color: $primary-color
+  color: white
+  cursor: pointer
+  margin-bottom: 20px
+  border-radius: 5px
+  overflow: hidden
+
+  &.open .collapse-content
+    display: block
+
+.collapse-header
+  display: flex
+  justify-content: space-between
+  padding: 10px 20px
+
+.arrow
+  font-size: 20px
+  transition: transform 0.3s ease
+
+.open .arrow
+  transform: rotate(180deg)
+
+.collapse-content
+  display: none
+  padding: 10px 20px

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Card.scss';
+import '../styles/Card.sass';
 import { Link } from 'react-router-dom';
 
 interface CardProps {

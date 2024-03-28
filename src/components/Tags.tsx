@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Tags.scss';
+import '../styles/Tags.sass';
 
 interface LogementInfoProps {
   tags: string[];

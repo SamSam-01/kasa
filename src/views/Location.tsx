@@ -2,9 +2,10 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import logementsData from '../ressources/logements.json';
 import Carousel from '../components/Carousel';
-import "../styles/Location.scss"
+import "../styles/Location.sass"
 import LogementInfo from '../components/LogementInfo';
 import HostInfo from '../components/HostInfo';
+import Collapse from '../components/Collapse';
 
 const Location: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -34,7 +35,10 @@ const Location: React.FC = () => {
           />
         </div>
       </div>
-
+      <div className='collapse-container'>
+        <Collapse title="Description" content={logement.description}/>
+        <Collapse title="Équipement" content={logement.equipments.toString()}/>
+      </div>
     </div>
   );
 };

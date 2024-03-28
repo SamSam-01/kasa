@@ -1,6 +1,6 @@
 // Rating.tsx
 import React from 'react';
-import '../styles/Rating.scss';
+import '../styles/Rating.sass';
 
 interface RatingProps {
   rating: number;

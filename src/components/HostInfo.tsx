@@ -1,6 +1,6 @@
 import React from 'react';
 import Rating from './Rating';
-import '../styles/HostInfo.scss';
+import '../styles/HostInfo.sass';
 
 interface HostInfoProps {
   hostName: string;

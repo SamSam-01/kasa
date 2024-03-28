@@ -4,7 +4,7 @@ import Home from './views/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Location from './views/Location';
-import "./App.scss";
+import "./App.sass";
 import NotFound from './views/NotFound';
 
 const App: React.FC = () => {

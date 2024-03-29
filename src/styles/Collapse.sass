@@ -1,0 +1,33 @@
+@import 'variables'
+
+.collapse
+  margin-bottom: 20px
+
+  &.open
+    .collapse-content
+      display: block
+
+  .collapse-header
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0px 10px
+    background-color: $primary-color
+    font-size: small
+    color: white
+    border-radius: 5px
+
+  .collapse-content
+    display: none
+    padding: 10px
+    background-color: #F6F6F6
+    border-radius: 5px
+
+.collapse-container
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  @media (max-width: 768px)
+    flex-direction: column

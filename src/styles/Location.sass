@@ -3,13 +3,9 @@
   justify-content: space-between
   align-items: flex-start
 
+
 .left-section
   flex: 2
-
-.right-section
-  flex: 1
-  display: flex
-  justify-content: flex-end
 
 .collapse-container
   display: flex
@@ -22,3 +18,9 @@
   @media (max-width: 768px)
     .collapse
       width: 100%
+
+@media (max-width: 768px)
+  .infos
+    flex-direction: column
+  .right-section
+    width: 100%

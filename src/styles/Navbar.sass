@@ -16,6 +16,8 @@
     font-family: Montserrat
     display: flex
     align-items: center
+    @media only screen and (max-width: 600px)
+      text-transform:  uppercase
 
     .navbar__link
       margin-right: 1rem
@@ -23,7 +25,5 @@
       color: #333
       transition: color 0.3s ease
 
-      &:hover
-        color: #007bff
       &.active
         text-decoration: underline

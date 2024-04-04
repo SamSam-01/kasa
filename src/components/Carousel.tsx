@@ -23,7 +23,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           &lt;
         </button>
       )}
-      <div className="carousel__image-container" style={{ height: "415px", borderRadius: "10px" }}>
+      <div className="carousel__image-container">
         <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} className="carousel__image" />
         {images.length > 1 && (<div className="carousel__image-number">{`${currentImageIndex + 1}/${images.length}`}</div>)}
       </div>

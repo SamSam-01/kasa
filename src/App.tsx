@@ -11,13 +11,15 @@ import About from './views/About';
 const App: React.FC = () => {
   return (
     <Router>
-	    <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/location/:id"  element={<Location />} />
-        <Route path='/about' element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/location/:id"  element={<Location />} />
+          <Route path='/about' element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );

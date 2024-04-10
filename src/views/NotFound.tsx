@@ -7,6 +7,7 @@ const NotFound: React.FC = () => {
   const handleReturnHome = () => {
     return navigate('/');
   };
+  document.title = "Page not found !";
 
   return (
     <div className='not-found-container'>

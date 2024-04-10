@@ -1,35 +1,33 @@
 @import 'variables'
 
-.host-info
+.host
   display: flex
   flex-direction: column
   align-items: flex-end
   text-align: left
+  @media (max-width: 768px)
+      flex-direction: row-reverse
+      justify-content: space-between
 
-.host-details
-  display: flex
-  align-items: center
+  &__details
+    display: flex
+    align-items: center
 
-.host-name
-  flex: 1
-  word-wrap: break-word
-  color: $primary-color
-  font-size: 16px
-  font-weight: light
+  &__name
+    flex: 1
+    word-wrap: break-word
+    color: $primary-color
+    font-size: 16px
+    font-weight: light
 
-.host-picture
-  width: 40px
-  height: 40px
-  border-radius: 50%
-  margin-left: 10px
+  &__picture
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    margin-left: 10px
 
-.rating-container
-  margin-top: 10px
-
-@media (max-width: 768px)
-  .host-info
-    flex-direction: row-reverse
-    justify-content: space-between
-  .rating-container
-    margin-top: 0
-    align-self: center
+  &__rating-container
+    margin-top: 10px
+    @media (max-width: 768px)
+        margin-top: 0
+        align-self: center

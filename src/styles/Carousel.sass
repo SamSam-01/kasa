@@ -3,45 +3,45 @@
   width: 100%
   height: 415px
   border-radius: 10px
-
-.carousel__button
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  background-color: transparent
-  border: none
-  font-size: 24px
-  color: white
-  cursor: pointer
-
-.carousel__button--prev
-  left: 10px
-  z-index: 1
-
-.carousel__button--next
-  right: 10px
-  z-index: 1
-
-.carousel__image-container
-  position: relative
-  width: 100%
-  height: 100%
-  border-radius: 10px
-  overflow: hidden
-
-.carousel__image
-  width: 100%
-  height: 100%
-  object-fit: cover
-
-.carousel__image-number
-  position: absolute
-  bottom: 10px
-  left: 50%
-  transform: translateX(-50%)
-  color: white
-  font-weight: bold
-
-@media (max-width: 768px)
-  .carousel
+  @media (max-width: 768px)
     height: 335px
+
+  &__button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background-color: transparent
+    border: none
+    font-size: 24px
+    color: white
+    cursor: pointer
+
+  &__button--prev
+    left: 10px
+    z-index: 1
+
+  &__button--next
+    right: 10px
+    z-index: 1
+
+  &__image-container
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    overflow: hidden
+
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &__image-number
+    position: absolute
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+    color: white
+    font-weight: bold
+
+  

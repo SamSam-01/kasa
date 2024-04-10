@@ -11,12 +11,12 @@ interface HostInfoProps {
 const HostInfo: React.FC<HostInfoProps> = ({ hostName, hostPicture, rating }) => {
   const [firstName, lastName] = hostName.split(' ');
   return (
-    <div className='host-info'>
-      <div className='host-details'>
-        <p className='host-name'>{firstName} <br/> {lastName}</p>
-        <img src={hostPicture} alt={`Profile of ${hostName}`} className='host-picture' />
+    <div className='host'>
+      <div className='host__details'>
+        <p className='host__name'>{firstName} <br/> {lastName}</p>
+        <img src={hostPicture} alt={`Profile of ${hostName}`} className='host__picture' />
       </div>
-      <div className='rating-container'>
+      <div className='host__rating-container'>
         <Rating rating={rating} />
       </div>
     </div>

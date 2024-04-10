@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/About.sass';
 import Collapse from '../components/Collapse';
 import Banner from '../components/Banner';
 
 const About: React.FC = () => {
+  document.title = "A propos de Kasa";
   const CollapseContent = [
     {
       title: 'Fiabilité',

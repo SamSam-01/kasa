@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import logementsData from '../ressources/logements.json';
 import Carousel from '../components/Carousel';
@@ -15,6 +15,7 @@ const Location: React.FC = () => {
   if (!logement) {
     return <NotFound />;
   }
+  document.title = "Kasa - " + logement.title;
   const images = logement.pictures;
 
   return (

@@ -5,6 +5,7 @@ import '../styles/Home.sass';
 import logementsData from '../ressources/logements.json';
 
 const Home: React.FC = () => {
+  document.title = "Kasa";
   return (
     <div className='home_page'>
       <Banner image={process.env.PUBLIC_URL + "/assets/home_banner.png"} text='Chez vous, partout et ailleurs' />
